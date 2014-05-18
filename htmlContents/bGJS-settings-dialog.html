@@ -1,0 +1,33 @@
+<div id="gruntjs-settings-dialog" class="git modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">{{GRUNTJS_SETTINGS}}</h1>
+    </div>
+    <div class="modal-body">
+        <ul class="nav nav-tabs" id="gJS-settings-tabs">
+            <li class="active"><a href="#gJS-settings-tab-shortcuts">{{GRUNTJS_SHORTCUTS}}</a>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="gJS-settings-tab-shortcuts">
+                <!-- #shortcuts -->
+                <div>
+                    <div class="col-xs-12">
+                        {{{SHORTCUTS_HINT}}}
+                    </div>
+                </div>
+                <div>
+                    <div class="col-xs-4">
+                        <label for="gJS-settings-panelShortcut">{{PANEL_SHORTCUT}}:</label>
+                        <input id="gJS-settings-panelShortcut" type="text" settingsProperty="panelShortcut" />
+                    </div>
+                </div>
+            </div>
+            <!-- ./shortcuts -->
+        </div>
+        
+    </div>
+    <div class="modal-footer">
+        <button data-button-id="cancel" class="dialog-button btn cancel" >{{BUTTON_CANCEL}}</button>
+        <button data-button-id="save" class="dialog-button btn primary">{{BUTTON_SAVE}}</button>
+    </div>
+</div>
